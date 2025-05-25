@@ -3,68 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ad Platform</title>
+    <title>Dummy Ad Example</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Ad Platform</h1>
-    </header>
-
-    <main>
-        <!-- Add New Ad Section -->
-        <section class="add-ad-container">
-            <h2>Add Your Own Ad</h2>
-            <form id="addAdForm">
-                <div class="form-group">
-                    <label for="adTitle">Title:</label>
-                    <input type="text" id="adTitle" required>
-                </div>
-                <div class="form-group">
-                    <label for="adDescription">Short Description:</label>
-                    <input type="text" id="adDescription" required>
-                </div>
-                <div class="form-group">
-                    <label for="adImageUrl">Image URL:</label>
-                    <input type="url" id="adImageUrl" required placeholder="https://example.com/image.jpg">
-                </div>
-                <div class="form-group">
-                    <label for="adDetailedDescription">Detailed Description:</label>
-                    <textarea id="adDetailedDescription" rows="4" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="adCtaLink">Call-to-Action Link:</label>
-                    <input type="url" id="adCtaLink" required placeholder="https://your-website.com">
-                </div>
-                <div class="form-group">
-                    <label for="adCtaText">Call-to-Action Text:</label>
-                    <input type="text" id="adCtaText" required placeholder="Buy Now">
-                </div>
-                <button type="submit" class="submit-button">Add Ad</button>
-            </form>
-        </section>
-
-        <section class="ads-container">
-            <h2>Featured Ads</h2>
-            <div class="ads-grid" id="adsGrid">
-                <!-- Ads will be loaded here dynamically -->
-            </div>
-        </section>
-
-        <!-- Ad Details Modal -->
-        <div id="adModal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn">&times;</span>
-                <div id="adDetails">
-                    <!-- Ad details will be shown here -->
+    <div class="container">
+        <h1>Website Content</h1>
+        <p>This is a sample website with a dummy advertisement.</p>
+        
+        <!-- Dummy Ad -->
+        <div class="ad-container" id="dummyAd">
+            <div class="ad-banner">
+                <img src="https://placehold.co/800x200/4c68d7/ffffff?text=Amazing+Product+Sale+-+50%+OFF!" alt="Advertisement Banner">
+                <div class="ad-content">
+                    <h3>Limited Time Offer!</h3>
+                    <p>Click here to learn more about this amazing deal.</p>
                 </div>
             </div>
         </div>
-    </main>
+        
+        <div class="article-content">
+            <h2>Article Heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis sapien eget justo sagittis, in tristique purus facilisis.</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2023 Ad Platform. All rights reserved.</p>
-    </footer>
+    <!-- Modal that appears when ad is clicked -->
+    <div id="adModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Special Offer Details</h2>
+            <img src="https://placehold.co/600x300/4c68d7/ffffff?text=Product+Image" alt="Product Image" class="product-image">
+            <h3>Premium Product - 50% OFF</h3>
+            <p>This amazing product will solve all your problems! Limited time offer available now.</p>
+            <ul>
+                <li>High quality materials</li>
+                <li>Lifetime warranty</li>
+                <li>Free shipping</li>
+                <li>30-day money back guarantee</li>
+            </ul>
+            <a href="#" class="cta-button">Buy Now</a>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
